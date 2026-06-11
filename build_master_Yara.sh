@@ -13,12 +13,13 @@ TARGET_DIRS=(
     "third-party/signature-base" # [WAJIB] Core intel & high confidence rules
     "third-party/reversinglabs" # [WAJIB] Malware family spesifik
     # --- PROFIL SERVER LINTAS PLATFORM ---
-    "third-party/rules/webshells" # Krusial untuk proteksi Web Server
-    "third-party/rules/malware" # Botnet dan trojan umum
-    "third-party/rules/cve_rules" # Deteksi eksploitasi kerentanan
-    "third-party/rules/exploit_kits" # Deteksi tools peretasan
-    "third-party/rules/maldocs" #PROFIL ENDPOINT WINDOWS (KARYAWAN)
-    "third-party/rules/email" #PROFIL ENDPOINT WINDOWS (KARYAWAN)
+    "third-party/yara-rules/webshells" # Krusial untuk proteksi Web Server
+    "third-party/yara-rules/malware" # Botnet dan trojan umum
+    "third-party/yara-rules/cve_rules" # Deteksi eksploitasi kerentanan
+    "third-party/yara-rules/exploit_kits" # Deteksi tools peretasan
+    # --- khusus endpoint laptop karayawan dan email server ---
+    "third-party/yara-rules/maldocs" #PROFIL ENDPOINT WINDOWS (KARYAWAN)
+    "third-party/yara-rules/email" #PROFIL ENDPOINT WINDOWS (KARYAWAN)
 )
 
 BLACKLIST=()
